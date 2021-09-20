@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>视频识别工具</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+	<div class="container">
+		视频中文字识别
+		<div class="screenshot-btn" id="full-screenshot">
+			<p>当前页面截图</p>
+		</div>
+	</div>
+	<div id="screenshot" class="screenshot">
+         <img id="img" width="300" height="200" src="" alt="screenshot">
+	</div>
+	<div class="ocr-area">
+		<div class="ocr" id="ocr">
+			<p>识别当前页面中文字</p>
+		</div>
+		<label>
+			<textarea class="textarea" id="textarea" rows="10" cols="30">我是一个文本框。</textarea>
+		</label>
+
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.container {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+}
+.screenshot-btn {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: #3385ff;
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 15px;
+	margin-top: 25px;
+}
+.screenshot-btn p {
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+	color: #fff;
+}
+.screenshot-btn:hover {
+	background-color: #2d78f4;
+}
+
+.ocr p{
+	border:1px solid #000000;
+}
