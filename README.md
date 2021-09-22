@@ -1,2 +1,3 @@
-# Chrome-screenshots
-此插件可以对网页进行整页截图和可视区域截图。
+# ChromeVideoOcrTool 视频文字识别插件
+##v1.0:视频单张截图文字识别
+##v1.1:视频选择多张截图文字识别

@@ -1,13 +1,13 @@
 {
 	"name": "VideoStudyTool",
-	"version": "1.0",
+	"version": "1.1",
 	"manifest_version": 2,	// 必须字段，且值为 2
 	"description": "提取网页正在播放的视频中的文字",
 
 	// 在chrome主工具条的地址栏右侧增加一个图标
 	"browser_action": {
 		"default_icon": "screenshot.png",
-		"default_title": "Screenshot of the previous page",
+		"default_title": "提取网页正在播放的视频中的文字",
 		"default_popup": "popup.html"
 	},
 

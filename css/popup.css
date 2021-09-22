@@ -26,4 +26,24 @@
 
 .ocr p{
 	border:1px solid #000000;
+	cursor: pointer;
+}
+.operation{
+	column-count: 2;
+}
+.clear{
+
+
+	border:1px solid #000000;
+	cursor: pointer;
+}
+
+.undo{
+
+
+	border:1px solid #000000;
+	cursor: pointer;
+}
+.ocr-area{
+	float: bottom;
 }
