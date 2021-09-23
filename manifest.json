@@ -1,6 +1,6 @@
 {
 	"name": "VideoStudyTool",
-	"version": "1.1",
+	"version": "1.2",
 	"manifest_version": 2,	// 必须字段，且值为 2
 	"description": "提取网页正在播放的视频中的文字",
 

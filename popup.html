@@ -27,13 +27,32 @@
 		<div class="ocr" id="ocr">
 			<p id="cut-num">识别当前视频中文字</p>
 		</div>
+	</div>
+	<div class="text-area">
 		<label>
 			<textarea class="textarea" id="textarea" rows="10" cols="30">我是一个文本框。</textarea>
 		</label>
-
+		<div class="text-control" id="text-control">
+		     <div class="save" id="save">
+			     保存到本地
+		     </div>
+		     <div class="clear-text" id="clear-text">
+			     清空文本框
+		     </div>
+		</div>
 	</div>
-
-
+	<div class="video-ocr">
+		<div class="switch" id="switch">
+			开始
+		</div>
+		<div class="clear-video" id="clear-video">
+			清空截图
+		</div>
+	</div>
+	<div class="video-req" id="video-req">
+		识别截取视频片段 共 0 秒
+	</div>
+	<script type="text/javascript" src="js/FileSaver.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/popup.js"></script>
 </body>

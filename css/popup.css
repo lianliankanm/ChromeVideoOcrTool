@@ -39,11 +39,48 @@
 }
 
 .undo{
+	border:1px solid #000000;
+	cursor: pointer;
+}
+
+.video-ocr{
+	column-count: 2;
+}
+.switch{
+	border:1px solid #000000;
+	cursor: pointer;
+}
+.clear-video{
 
 
 	border:1px solid #000000;
 	cursor: pointer;
 }
-.ocr-area{
-	float: bottom;
+.video-req{
+	 border:1px solid #000000;
+	 cursor: pointer;
+ }
+
+.text-control{
+	width: 80px;
+	column-count: 1;
+	/*display: inline-block;*/
+}
+.textarea{
+	width: 200px;
+	/*display: inline-block;*/
+}
+.save{
+	border:1px solid #000000;
+	cursor: pointer;
+}
+.clear-text{
+
+
+	border:1px solid #000000;
+	cursor: pointer;
+}
+.text-area{
+	display: flex;
+	justify-content: space-around;
 }
