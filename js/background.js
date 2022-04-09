@@ -23,10 +23,9 @@ function getCurrentTabId(callback)
     });
 }
 
-// 发送文字识别请求
+// 调用服务器后端接口发送文字识别请求
     function getOcr(file){
         let url = "http://10.112.255.201:5000/video/byFile";
-
         let result = '';
         $.ajax({
             async:false,
@@ -52,7 +51,7 @@ function getCurrentTabId(callback)
     }
 
 
-// 发送文字识别请求
+// 调用百度ocr接口发送文字识别请求
 // function getOcr(file){
 //     let url = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic";
 //     let access_token = '24.fa61d507ac3931d11a74856d764db2a9.2592000.1637293103.282335-24874738';
