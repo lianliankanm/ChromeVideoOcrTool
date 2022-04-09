@@ -32,7 +32,7 @@ function getCurrentTabId(callback)
             async:false,
             contentType: 'application/x-www-form-urlencoded',
             type:"post",
-            url:url
+            url:url,
             data : {'image':file},
             success:function(response){
 
