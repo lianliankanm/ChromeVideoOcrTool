@@ -7,9 +7,9 @@
 </head>
 <body>
 	<div class="container">
-		视频中文字识别
+		视频文字识别
 		<div class="screenshot-btn" id="full-screenshot">
-			<p>当前页面截图</p>
+			<p>视频截图</p>
 		</div>
 	</div>
 	<div id="screenshot" class="screenshot">
@@ -17,10 +17,10 @@
 	</div>
 	<div class="operation">
 		<div class="clear" id="clear">
-			<p>清空截图</p>
+			清空截图
 		</div>
 		<div class="undo" id="undo">
-			<p>取消当前截图</p>
+			取消当前截图
 		</div>
 	</div>
 	<div class="ocr-area">
@@ -39,6 +39,12 @@
 		     <div class="clear-text" id="clear-text">
 			     清空文本框
 		     </div>
+			<div class="copy-text" id="copy-text">
+				复制到剪切板
+			</div>
+			<div class="tran" id="tran">
+				内容翻译
+			</div>
 		</div>
 	</div>
 	<div class="video-ocr">
@@ -46,11 +52,14 @@
 			开始
 		</div>
 		<div class="clear-video" id="clear-video">
-			清空截图
+			清空视频片段
 		</div>
 	</div>
 	<div class="video-req" id="video-req">
 		识别截取视频片段 共 0 秒
+	</div>
+	<div class="open" id="open">
+		跳转至应用主页 体验更多功能
 	</div>
 	<script type="text/javascript" src="js/FileSaver.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>

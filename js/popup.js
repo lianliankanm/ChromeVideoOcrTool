@@ -57,8 +57,8 @@ $(function () {
                 console.log(p + 'lines: ' + str);
             }
 
-            let text = $('#textarea').text();
-            $('#textarea').html(text + "\n" + str);
+            let text = $('#textarea').val();
+            $('#textarea').val(text + "\n" + str);
         }
     });
     $('#switch').on('click', function () {
@@ -89,7 +89,7 @@ $(function () {
                     console.log('共有'+ n + '张截图');
                     time += 0.5;
                     console.log('截取视频'+ time + '秒');
-
+                    $('#video-req').html('识别截取视频片段： 共 '+ time +' 秒 ');
                 });
             });
         }
@@ -121,7 +121,7 @@ $(function () {
         for (let item in result){
             str += result[item] + '\n';
         }
-        $('#textarea').html(str);
+        $('#textarea').val(str);
     });
     function noRepeat(arr){
         var temp =[];
@@ -135,15 +135,29 @@ $(function () {
         return temp;
     }
     $('#clear-text').on('click', function () {
-        $('#textarea').html('');
+        $('#textarea').val('');
     });
     $('#save').on('click', function () {
-        let str = $('#textarea').text();
+        let str = $('#textarea').val();
         let text = [str];
         let blob = new Blob(text, {type: "text/plain;charset=utf-8"});
         saveAs(blob, "VideoOCR.txt");
 
     });
-
+    $('#copy-text').on('click', function () {
+        let a = $('#textarea').val();
+        let b = $('#textarea').html();
+        let c = $('#textarea').text();
+        console.log(a + "\n" + b + "\n" + c );
+        document.querySelector("#textarea").select();
+        document.execCommand('copy');
+    });
+    $('#open').on('click', function () {
+        window["filter"] = {
+            "type": "red",
+            "id": 25,
+            "name": "weekdawn"
+        };
+        window.open("https://www.baidu.com");
+    });
 });
-
